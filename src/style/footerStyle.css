@@ -1,0 +1,78 @@
+/* Footer styles */
+.footer {
+    background-color: #28282B;
+    color: white;
+    padding: 40px 0;
+}
+  
+.footer h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center; /* Center the heading text */
+}
+  
+.footer .footer-column {
+    flex: 1;  /* Make each column grow equally */
+    margin: 0 15px; /* Add some space between columns */
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Horizontally center the items in the column */
+    justify-content: center; /* Vertically center the items in the column */
+    text-align: center; /* Align text to the center */
+}
+  
+.footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer .footer-column ul li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+  
+/* Add margin-right to social and contact icons */
+.footer .social-icons a, .footer .contact-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size for the links */
+    display: flex;
+    align-items:start;
+    justify-content: center;  /* Horizontally center the icon and text */
+    margin-right: 15px;  /* Add margin to the right of the icon */
+}
+
+/* Ensure the icon itself has some spacing from the text */
+.footer .social-icons a svg, .footer .contact-icons a svg {
+    margin-right: 8px;  /* Add margin-right to the SVG icon inside the anchor */
+}
+  
+.footer .social-icons a:hover, .footer .contact-icons a:hover {
+    color: #F9629F;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;  /* Evenly distributes columns */
+    gap: 15px;  /* Even gap between columns */
+    align-items: flex-start; /* Aligns the columns to the top */
+}
+  
+.heading-container {
+    display: inline-block;
+    position: relative;
+}
+  
+.heading-container h3 {
+    border-bottom: 3px solid #F9629F;  /* Pink bottom border */
+    padding-bottom: 5px;
+}
+  
+.copyright {
+    background-color: #090909;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}

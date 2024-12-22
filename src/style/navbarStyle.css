@@ -1,0 +1,24 @@
+.nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+li{
+    margin: 10px;
+}
+li:hover{
+    color: #F9629F;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search{
+    width: 300px;
+    padding: 1px 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(162, 162, 162);
+}
+.navbar{
+    box-shadow: 0 3px 5px rgba(128, 127, 127, 0.467);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

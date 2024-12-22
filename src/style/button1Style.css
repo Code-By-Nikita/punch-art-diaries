@@ -1,0 +1,28 @@
+.button1 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(229, 227, 227);
+    color: #363a3e;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button1:hover{
+    background-color: rgb(251, 216, 230);
+  }
+  
+  .button1:active {
+    background-color: rgb(192, 190, 190); /* Even darker shade when button is pressed */
+    color: black;
+  }
+  
+  .button1 span {
+    font-weight: 600;
+  }
+  .button-icon{
+    padding-right: 2px;
+
+  }
