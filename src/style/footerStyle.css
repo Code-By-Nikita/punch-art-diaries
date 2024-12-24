@@ -29,14 +29,17 @@
   
 .footer .footer-column ul li {
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 10px;
+}
+.para{
+    font-size: 13px;
 }
   
 /* Add margin-right to social and contact icons */
 .footer .social-icons a, .footer .contact-icons a {
     color: white;
     text-decoration: none;
-    font-size: 14px; /* Smaller font size for the links */
+    font-size: 12px; /* Smaller font size for the links */
     display: flex;
     align-items:start;
     justify-content: center;  /* Horizontally center the icon and text */
@@ -74,5 +77,5 @@
     color: white;
     text-align: center;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 12px;
 }

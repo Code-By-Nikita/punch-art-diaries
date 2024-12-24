@@ -12,9 +12,9 @@ const Footer = () => {
             <div className="heading-container">
               <h3>More About Punch Art Diaries</h3>
             </div>
-            <p>At Punch Art Diaries, we specialize in handcrafted punch needle art products, including <strong> pouches, cushion covers, wall hangings, frames, hoops, and aprons</strong>. Each piece is lovingly crafted with attention to detail, bringing warmth and charm to your home.
+            <p className='para'>At Punch Art Diaries, we specialize in handcrafted punch needle art products, including <strong> pouches, cushion covers, wall hangings, frames, hoops, and aprons</strong>. Each piece is lovingly crafted with attention to detail, bringing warmth and charm to your home.
 
-What makes us unique?<b>Customization!</b> We create products tailored to your specific needs and style, ensuring every item is one-of-a-kind.
+What makes us unique ?<b> Customization!</b> We create products tailored to your specific needs and style, ensuring every item is one-of-a-kind.
 
 Add a personal touch to your space with our beautiful, handmade creations. 🌸✨</p>
           </div>
@@ -55,7 +55,7 @@ Add a personal touch to your space with our beautiful, handmade creations. 🌸�
 
       {/* Copyright Section */}
       <div className="copyright">
-        Copyright &copy; Code-By-Nikita | All rights reserved
+        Copyright &copy; @2024 Nikita Choudhary | Code-By-Nikita | Punch Art Diaries | All rights reserved
       </div>
     </>
   );
