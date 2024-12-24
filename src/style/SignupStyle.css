@@ -1,0 +1,103 @@
+/* Wrapper to contain the background image */
+.signup-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Background image container with blur effect */
+  .signup-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/bgCard.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Apply blur to the background */
+    z-index: -1; /* Place the background image behind the card */
+  }
+  
+  /* Container for the SignUp form card */
+  .signup-card {
+    position: relative;  /* Ensure the card stays on top of the background */
+    max-width: 350px;  /* Reduced max-width to make the card smaller */
+    margin: 30px auto;  /* Center the card */
+    padding: 20px;
+    background-color: #fff;  /* White background for the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;  /* Font size for the form */
+    z-index: 1;  /* Ensure card content stays above the background */
+  }
+  
+  /* Heading with a bottom border */
+  .signup-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(192, 22, 100, 1); /* Bottom border with the specified color */
+  }
+  
+  /* Form layout and styling */
+  .signup-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;  /* Reduced margin for a tighter layout */
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;  /* Slightly reduced padding for smaller input fields */
+    font-size: 14px;  /* Set input font size to 14px */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input::placeholder {
+    color: #888;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;  /* Adjusted button font size to 14px */
+    background-color: rgba(192, 22, 100, 1);  /* Updated button color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(192, 22, 100, 0.8);  /* Slightly darker shade for hover effect */
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
