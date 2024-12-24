@@ -1,24 +1,84 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spread items to left and right */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 3px 5px rgba(128, 127, 127, 0.467);
+    padding: 5px;
+}
+
+/* Logo container */
+.logo-container {
+    flex: 0 1 auto; /* Prevent it from growing/shrinking */
+}
+
+/* Logo image styles */
+.navbar-logo {
+    height: 30px; /* Adjust the height of the logo */
+    width: 30px; /* Maintain aspect ratio */
+}
+
+/* Navigation links and items */
 .nav-ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align items to the right */
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
-li{
-    margin: 10px;
+
+li {
+    margin: 10px; /* General margin for spacing */
 }
-li:hover{
-    color: #F9629F;
-    font-weight: 600;
-    cursor: pointer;
+
+/* Adjusting margin-top for the specific list items */
+.nav-ul li:nth-child(1),
+.nav-ul li:nth-child(2),
+.nav-ul li:nth-child(3),
+.nav-ul li:nth-child(4),
+.nav-ul li:nth-child(5),
+.nav-ul li:nth-child(6) {
+    margin-top: 20px; /* Adjust this value to align them with the buttons */
 }
-.search{
+
+/* Search input styles */
+.search {
     width: 300px;
     padding: 1px 5px;
     border-radius: 10px;
     border: 2px solid rgb(162, 162, 162);
+    margin-right: 20px; /* Add some space to the right */
 }
-.navbar{
-    box-shadow: 0 3px 5px rgba(128, 127, 127, 0.467);
-    padding-bottom: 10px;
-    padding-top: 10px;
+
+/* Link styles */
+.nav-ul li a {
+    color: #363a3e;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hover state for links */
+.nav-ul li a:hover {
+    color: #F9629F;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Optional: Fix button size */
+.nav-ul li button {
+    padding: 5px 10px;
+}
+
+/* Make navbar responsive for small screens */
+@media (max-width: 768px) {
+    .nav-ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .nav-ul li {
+        margin: 10px 0; /* More space between items */
+    }
 }
